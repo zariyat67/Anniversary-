@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy 1 Month Anniversary ❤️</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+
+body{
+
+    background: linear-gradient(135deg,#ffd1dc,#ffc0cb);
+
+    overflow-x:hidden;
+
+}
+
+.heart{
+
+    position:fixed;
+
+    bottom:-50px;
+
+    animation:floatUp 8s linear infinite;
+
+    opacity:.7;
+
+    pointer-events:none;
+
+}
+
+@keyframes floatUp{
+
+    0%{
+
+        transform:translateY(0) scale(.8);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(-110vh) scale(1.2);
+
+        opacity:0;
+
+    }
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+</style>
+
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-4">
+
+<div class="bg-white/90 shadow-2xl rounded-3xl p-8 max-w-3xl text-center">
+
+<h1 class="text-5xl font-extrabold text-pink-600 mb-6">
+
+Happy 1 month anniversary,<br>
+
+My love ❤️
+
+</h1>
+
+<div class="text-5xl mb-6">
+
+💕 💖 💌
+
+</div>
+
+<p class="text-xl leading-relaxed text-gray-700">
+
+Hello ml, today was the special day on which I finally got enough guts to confess my love for u 😛 i remember how my palms were sweating a heart pumping so fast.. i just wanted u to accept me, and when u did omg i was the happiest ever and i still am, its so crazy how fast all of this happened lowky like 3.5months as friends and now i can’t even imagine living without u ♥️ i feel so drowned in this feeling and im so thankful for it, im so lucky to be loved by u, ml 🫶🏻 every single time u say "i love u" "i miss u" or anything sweet to me, it’s literally the most beautiful thing ever like i never thought id be this lover boy for a girl 😔♥️ i try to be the best i can bby and if i make mistakes please just let me know so i can be better for us 🫶🏻 i hope this 1 month turns into infinitely being together forever in love ♥️ i hope ur liked the flowers i send, it’s rlly bare minimum that i can do.. i rlly wish to do so much more bby and i pray every single day that i get to see u soon. ♥️
+
+</p>
+
+<button onclick="celebrate()"
+
+class="mt-8 bg-pink-500 hover:bg-pink-600 text-white font-bold px-8 py-4 rounded-2xl shadow-xl text-xl transition">
+
+Click for a Surprise 💕
+
+</button>
+
+<p id="surprise"
+
+class="hidden mt-6 text-3xl font-bold text-pink-600">
+
+💕 You are the best gf ever 💕
+
+</p>
+
+</div>
+
+<script>
+
+function celebrate() {
+
+document.getElementById("surprise")
+
+.classList.remove("hidden");
+
+for(let i=0;i<50;i++){
+
+setTimeout(()=>{
+
+let heart=document.createElement("div");
+
+heart.innerHTML="💖";
+
+heart.className="heart";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(20+Math.random()*50)+"px";
+
+heart.style.animationDuration=(4+Math.random()*4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},8000);
+
+},i*100);
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
